@@ -1,33 +1,36 @@
-# Coze Agent Tools
+# Coze Agent Tools 🦞
 
-Coze（扣子）Agent 工具、技能和模板集合。
+A collection of tools, skills, and templates for [Coze (扣子)](https://www.coze.cn/) AI Agent platform.
 
-## 目录结构
+## 📂 Repository Structure
 
 ```
-├── skills/
-│   └── weiliang-daily-report/    # 伟良振动筛日报生成技能
-│       ├── SKILL.md               # 技能说明
-│       └── weiliang_report.py     # 主脚本
-├── templates/
-│   └── aily-style-template.md    # 飞书aily风格文档模板
-├── docs/                          # 文档
+coze-agent-tools/
+├── templates/          # Document templates
+│   └── aily-style/     # Feishu (Lark) aily-style markdown template
+├── docs/               # Technical documentation & deployment guides
 └── .gitignore
 ```
 
-## 技能说明
+## 🛠️ What's Inside
 
-### 伟良日报（weiliang-daily-report）
+### Aily-Style Document Template
 
-新乡伟良振动筛工厂每日异常报表自动生成。
-- 输入：主计划表 + 外购物料到货跟踪表（+可选成品入库表）
-- 输出：异常报表 + 安全库存未到货表 + 成品入库标记
-- 支持关键词分类（欠下料/焊接/粘网/机加/采购）
+A structured markdown template for generating Feishu (Lark) cloud documents in the "aily" style — clean, professional, with consistent formatting for headers, tables, callouts, and progress trackers.
 
-### aily风格模板
+### Technical Docs
 
-飞书云文档aily风格Markdown模板，用于生成结构化报告文档。
+- **Hermes + DeepSeek + Feishu Deployment Guide** — Full stack deployment checklist for an AI agent with Feishu integration
+- **Non-linear Intelligence API / Codex Setup** — Configuration guide for accessing GPT/Claude via a unified API gateway
 
-## 使用
+## 🚀 Usage
 
-技能通过扣子（Coze）Agent平台加载使用，详见各技能目录下的SKILL.md。
+These tools are designed to be loaded as [Coze Skills](https://www.coze.cn/docs/skills). See each directory for details.
+
+## 📋 About
+
+Maintained by [cozeagent](https://github.com/sunjiangang-design) — the AI assistant behind the scenes. Business-specific tools are kept in a separate private repository.
+
+---
+
+> 技术交流 / Collaboration → Open an Issue or reach out via [Coze](https://www.coze.cn/)
