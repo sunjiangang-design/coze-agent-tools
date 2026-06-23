@@ -1,0 +1,17 @@
+model:
+  class_path: anomalib.models.PatchCore
+  init_args:
+    backbone: wide_resnet50_2
+    layers: [layer2, layer3]
+    coreset_sampling_ratio: 0.1
+    num_neighbors: 9
+data:
+  class_path: anomalib.data.Folder
+  init_args:
+    root: ../data/anomalib
+    normal_dir: normal
+    abnormal_dir: abnormal
+    task: segmentation
+    image_size: 256
+trainer:
+  max_epochs: 10
