@@ -1,0 +1,9 @@
+path: ../data
+train: images/train
+val: images/val
+test: images/test
+nc: 3
+names:
+  - broken_wire
+  - blocked_hole
+  - deformation
